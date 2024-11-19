@@ -1,0 +1,385 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   iPhone Display
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+    
+    <html lang="en">
+        <head>
+          <meta charset="utf-8"/>
+          <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+          <title>iPhone Display</title>
+          <script src="https://cdn.tailwindcss.com"></script>
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+          <style>
+            body {
+              font-family: 'Roboto', sans-serif;
+            }
+          </style>
+        </head>
+        <body class="bg-gray-100">
+          <header class="bg-white shadow">
+            <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+              <div>
+                <a class="text-gray-800 text-xl font-bold" href="#">iPhone Display</a>
+              </div>
+              <nav class="space-x-4 flex justify-center items-center">
+                <a class="text-gray-800 hover:text-gray-600 max-sm:hidden" href="./home.html">Home</a>
+                <a class="text-gray-800 hover:text-gray-600 max-sm:hidden" href="./models.html">Models</a>
+                <a class="text-gray-800 hover:text-gray-600 max-sm:hidden" href="./about.html">About</a>
+      
+                <!-- Mobile Menu Dropdown -->
+                <div class="relative max-sm:block sm:hidden md:hidden lg:hidden">
+                  <button class="text-gray-800 hover:text-gray-600 font-bold" id="dropdownButton">
+                    Menu <i class="fas fa-chevron-down ml-1"></i>
+                  </button>
+                  <!-- Dropdown Content -->
+                  <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10">
+                    <a href="./home.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Home</a>
+                    <a href="./models.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Models</a>
+                    <a href="./about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About</a>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </header>
+      
+          <script>
+            // Toggle Dropdown
+            document.getElementById("dropdownButton").addEventListener("click", () => {
+              const dropdownMenu = document.getElementById("dropdownMenu");
+              dropdownMenu.classList.toggle("hidden");
+            });
+      
+            // Close dropdown when clicking outside
+            window.addEventListener("click", (event) => {
+              const button = document.getElementById("dropdownButton");
+              const dropdown = document.getElementById("dropdownMenu");
+              if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.classList.add("hidden");
+              }
+            });
+          </script>
+        </body>
+      </html>
+      
+  <main class="container mx-auto px-6 py-8">
+   <h1 class="text-3xl font-bold text-gray-800 mb-6">
+    All iPhones
+   </h1>
+   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 16 with a sleek design and advanced camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/Y9ueWRmK02RFHqdBqjXxP0rfUUiELUeHMBz9hWxneoq66IKPB.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 16
+      </h2>
+      <p class="text-gray-600 mt-2">
+       The latest iPhone with cutting-edge technology and features.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 15 with a sleek design and advanced camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/iEtOEUtdR9rHLp1BkdME3nZZ9vL7SbUDA0mC6Nf3CkphHR5JA.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 15
+      </h2>
+      <p class="text-gray-600 mt-2">
+       Experience the future with the iPhone 15.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 14 with a sleek design and advanced camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/c4dsZ161Uv76NFO1amX7BShYLqRMW8odsenEruecieWQeIKPB.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 14
+      </h2>
+      <p class="text-gray-600 mt-2">
+       The iPhone 14 offers a perfect blend of performance and design.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 13 Pro Max with a sleek design and triple camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/7BDw6Mb1tCIsPxdhnvKnbmWLY1eSXBeApcg395koH0H3OiyTA.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 13 Pro Max
+      </h2>
+      <p class="text-gray-600 mt-2">
+       The ultimate iPhone with a stunning display and advanced camera system.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 13 with a sleek design and dual camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/e1RiSMdztpSNDqYu4YQxzyGapaXgYnpZehy4ictcFByxOiyTA.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 13
+      </h2>
+      <p class="text-gray-600 mt-2">
+       Experience the latest technology with the iPhone 13.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 12 Pro Max with a sleek design and triple camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/yiAJpSoXBuIAOFOkdfIq0vMabShnXfHhKM2vRrhfp6updElnA.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 12 Pro Max
+      </h2>
+      <p class="text-gray-600 mt-2">
+       A powerful iPhone with a large display and advanced features.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 12 with a sleek design and dual camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/DGzfLfe9pjNJeTHRRZIXeYVrVkIfVY6tKiXwknWmLCbmvjo8E.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 12
+      </h2>
+      <p class="text-gray-600 mt-2">
+       The iPhone 12 offers a great balance of performance and design.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 11 Pro Max with a sleek design and triple camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/jPOx0jfVaUzsGqXUtWid1YFf2jrdofvlJdeUCXKk41MB8IKPB.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 11 Pro Max
+      </h2>
+      <p class="text-gray-600 mt-2">
+       A top-tier iPhone with a large display and advanced camera capabilities.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 11 with a sleek design and dual camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/eMqbiGG7bT2HYKYiLbX9zPe0SRoX2E3OA2Fq3JaeYdf87IKPB.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 11
+      </h2>
+      <p class="text-gray-600 mt-2">
+       The iPhone 11 offers great performance and a versatile camera system.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone XS Max with a sleek design and dual camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/eMQGoe63GVjyhkUpFi3uXYWge3meScClbPNhum5741507IKPB.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone XS Max
+      </h2>
+      <p class="text-gray-600 mt-2">
+       A premium iPhone with a large display and excellent performance.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone XS with a sleek design and dual camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/93xCLljsnkrkJZ5V5zFvSTZemOZXQpY1XSisiP5ZVcLlHR5JA.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone XS
+      </h2>
+      <p class="text-gray-600 mt-2">
+       The iPhone XS offers a great balance of performance and design.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone XR with a sleek design and single camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/25fvFi0UI3XuEaIfmy3vIcQlLFM2NmOwOtN1eMcVfuOQ8IKPB.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone XR
+      </h2>
+      <p class="text-gray-600 mt-2">
+       A colorful and powerful iPhone with a great display.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone X with a sleek design and dual camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/qGaAxdfYt5zOSa7Y9O6F5lCy2Jf0I9DP5rn7tSLtskAGPiyTA.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone X
+      </h2>
+      <p class="text-gray-600 mt-2">
+       The iPhone X introduced a new era of design and performance.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 8 Plus with a sleek design and dual camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/BJ68xpphRRaBK1oQn5VtaVMUAGmWmaBkoP37sbz2QLmujo8E.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 8 Plus
+      </h2>
+      <p class="text-gray-600 mt-2">
+       A classic iPhone with a large display and powerful features.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 8 with a sleek design and single camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/Bd7tnbDgaqryOhCT7IwfZQ3mTqiglkM0hMinX17pBExZHR5JA.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 8
+      </h2>
+      <p class="text-gray-600 mt-2">
+       The iPhone 8 offers great performance in a compact design.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 7 Plus with a sleek design and dual camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/2uU6MhWWuexEK68XliutXiQmzPfR4OflfOFxD1zzUfuexjo8E.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 7 Plus
+      </h2>
+      <p class="text-gray-600 mt-2">
+       A powerful iPhone with a large display and dual cameras.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 7 with a sleek design and single camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/uNee1jqopwgWtk6OWHKJvMFx0dmrcoyMfEiIlTpSvXeE8IKPB.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 7
+      </h2>
+      <p class="text-gray-600 mt-2">
+       The iPhone 7 offers great performance and a sleek design.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone SE with a sleek design and single camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/dE01TF4tuMZzOp3dWJfptHlKY9eMSTpczD22yV4Hv4ZCPiyTA.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone SE
+      </h2>
+      <p class="text-gray-600 mt-2">
+       A compact and powerful iPhone with a classic design.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 6s Plus with a sleek design and dual camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/OXWi8fC9DbxqfUh8DUsxGOLtc8xkf0Hnffa4BrCqJOE41RUeE.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 6s Plus
+      </h2>
+      <p class="text-gray-600 mt-2">
+       A powerful iPhone with a large display and dual cameras.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 6s with a sleek design and single camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/pxlJoAqEULIQA9gYAkLW2iJjKxnLSJZXKje3JKJJCgBmHR5JA.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 6s
+      </h2>
+      <p class="text-gray-600 mt-2">
+       The iPhone 6s offers great performance and a sleek design.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 6 Plus with a sleek design and dual camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/eqGH7MSRRZVlJKuCxtOdfAff8GDvxpdH34ZEZFx9WnBs7IKPB.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 6 Plus
+      </h2>
+      <p class="text-gray-600 mt-2">
+       A powerful iPhone with a large display and dual cameras.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 6 with a sleek design and single camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/q6ltf3fQmfWN8IfvtyfVxiOCTxXreiNXZqf28SN5vDBqlHR5JA.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 6
+      </h2>
+      <p class="text-gray-600 mt-2">
+       The iPhone 6 offers great performance and a sleek design.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 5s with a sleek design and single camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/XRkyEj5fUo0PKiqbfq6fI4wINE7BfQ5rvowbHHqOvp6U7IKPB.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 5s
+      </h2>
+      <p class="text-gray-600 mt-2">
+       A compact and powerful iPhone with a classic design.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 5c with a colorful design and single camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/2uyrP8vzRILqOtCat31ladTXep51q7mjODme3KZw6OexdElnA.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 5c
+      </h2>
+      <p class="text-gray-600 mt-2">
+       A colorful and powerful iPhone with a great display.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 5 with a sleek design and single camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/vFPgOJIfakXMIqHLc5Wso42E3F9UQwwE4zJoN8bSiBCnHR5JA.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 5
+      </h2>
+      <p class="text-gray-600 mt-2">
+       The iPhone 5 offers great performance and a sleek design.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 4s with a sleek design and single camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/hWq3AiEGdnrlF5Mo9uKLau4SgfAfKxhKD0EWQ9lRODp5OiyTA.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 4s
+      </h2>
+      <p class="text-gray-600 mt-2">
+       A compact and powerful iPhone with a classic design.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <img alt="iPhone 4 with a sleek design and single camera system" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/WZVDzKizqG5NClicP1dfiZO7h9neeHZRNK5IqbbWgFRkdElnA.jpg" width="400"/>
+     <div class="p-4">
+      <h2 class="text-xl font-bold text-gray-800">
+       iPhone 4
+      </h2>
+      <p class="text-gray-600 mt-2">
+       The iPhone 4 offers great performance and a sleek design.
+      </p>
+     </div>
+    </div>
+   </div>
+  </main>
+ </body>
+</html>
